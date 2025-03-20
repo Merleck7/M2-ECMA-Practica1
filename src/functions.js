@@ -1,4 +1,4 @@
-const registrarDestino = (event) => {
+export const registrarDestino = (event) => {
   event.preventDefault(); // Evita que el formulario se envíe y la página se recargue
 
   // Obtén los valores seleccionados
