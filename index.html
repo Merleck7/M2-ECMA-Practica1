@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planificador de Viajes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Planificador de Viajes - España</h1>
+    <form id="form-destino">
+      <label for="destino">Destino:</label>
+      <select id="destino" placeholder="Ejemplo: Paris" required>
+        <option value="- Selecciona una opcion -">- Selecciona una opción -</option>
+        <option value="Paris">Paris</option>
+        <option value="Londres">Londres</option>
+        <option value="Berlín">Berlín</option>
+        
+      </select>
+      <label for="fecha">Fecha de Viaje:</label>
+      <input type="date" id="fecha" required>
+      
+      <label for="transporte">Transporte:</label>
+      <select id="transporte" required>
+        <option value="- Selecciona una opcion -">- Selecciona una opción -</option>
+        <option value="Avión">Avión</option>
+        <option value="Tren">Tren</option>
+        <option value="Autobús">Autobús</option>
+      </select>
+      
+      <button id="registrar" type="submit">Registrar Destino</button>
+    </form>
+    <!-- Contenedor de itinerario -->
+    <div id="itinerario">
+      <h2>Itinerario</h2>
+      <ul id="lista-itinerario"></ul>
+    </div>
+  </div>
+
+  <script src="src/main.js" type="module"></script>
+</body>
+</html>
+
